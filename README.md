@@ -35,6 +35,7 @@
 
 ## モデルファイルの入手と格納
 * 下記3つのモデルファイルをダウンロードしmodelsフォルダに格納してください。
+`ComfyUI\custom_nodes\ComfyUI-IsNiceParts\models`
 * modelsフォルダが無い場合は作成してください。
 
 ### hand_yolov8n.pt
@@ -62,7 +63,3 @@ https://huggingface.co/yzd-v/DWPose/tree/main
 
 ## ライセンス
 AGPL-3.0
-
-
-## 謝辞
-未記載
