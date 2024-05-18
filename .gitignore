@@ -1,5 +1,7 @@
+!.gitignore
 folder_paths.py
-models/*
+models/
+!models/ModelFileIsInThisFolder.txt
 dwpose_infer_example.py
 nodes.py
 test_output*
