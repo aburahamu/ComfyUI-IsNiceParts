@@ -1,12 +1,14 @@
 # ComfyUI-IsNiceParts
 このカスタムノードは、受け取った画像から体の部位（今は手だけ）を検出し、骨格が推定できた場合は画像を出力します。
 
+
 ## インストール方法
 * 以下のどちらかの手段を採用してください。
+* モデルファイルを入手し、ComfyUI-IsNiceParts内の「models」フォルダに格納してください。
 ### ComfyUI Manager
 1. ComfyUIを起動し、ComfyUI Managerを開く
 2. 「Install Custom Nodes」をクリック
-3. 「IsNiceParts」を検索し、ComfyUI-IsNicePartsをインストールする
+3. 「IsNice」を検索し、ComfyUI-IsNicePartsをインストールする
 4. ComfyUIを再起動する
 5. 完了です
 ### git clone
@@ -30,6 +32,20 @@
 12. ComfyUIが開いていれば再起動する
 13. 完了です
 
+
+## モデルファイルの入手と格納
+* 下記3つのモデルファイルをダウンロードしmodelsフォルダに格納してください。
+* modelsフォルダが無い場合は作成してください。
+
+### hand_yolov8n.pt
+https://huggingface.co/Bingsu/adetailer/tree/main
+* 「hand_yolov8n.pt」をダウンロードしてください。
+
+### dw-ll_ucoco_384.onnx
+### yolox_l.onnx
+https://huggingface.co/yzd-v/DWPose/tree/main
+* 「dw-ll_ucoco_384.onnx」と「yolox_l.onnx」をダウンロードしてください。
+
 ## 使い方
 1. Add Node > IsNiceParts > NiceHand でノードを追加する
 2. image にパスを接続する
@@ -39,11 +55,14 @@
 4. Queue Promptを押して生成を開始します
 5. 良い手であれば出力ノードの「bool」に「True」が出力されます。良い手でなければ「False」が出力されます。
 
+
 ## 著者
 [aburahamu](https://twitter.com/aburahamu_aa)
 
+
 ## ライセンス
 AGPL-3.0
+
 
 ## 謝辞
 未記載

@@ -4,6 +4,7 @@ dwpose_infer_example.py
 nodes.py
 test_output*
 test.py
+!.gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
