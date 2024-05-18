@@ -1,3 +1,10 @@
+folder_paths.py
+models/*
+dwpose_infer_example.py
+nodes.py
+test_output*
+test.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
