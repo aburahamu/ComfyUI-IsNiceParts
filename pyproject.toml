@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-isniceparts"
+description = "This custom node detects body parts (currently only hands) from the received image and outputs the image if the skeleton can be estimated."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["ultralytics", "mediapipe", "opencv-python", "onnxruntime-gpu"]
+
+[project.urls]
+Repository = "https://github.com/aburahamu/ComfyUI-IsNiceParts"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-IsNiceParts"
+Icon = ""
